@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jboss-web>
+       <!-- Without the following, the context always ends-up being the name of the WAR file. -->
+       <context-root>/Voidnet</context-root>
+       <security-domain>VoidNet</security-domain>
+</jboss-web>

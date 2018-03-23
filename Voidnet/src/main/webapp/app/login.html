@@ -1,0 +1,45 @@
+<!doctype html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Login in to VoidNet</title>
+    <meta name="space,blast,fun" content="The Login Page!">
+    <meta name="Nik Jenson" content="spacePoint">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/bootstrap.css">
+    <link rel="stylesheet" href="../css/login-style.css">
+
+    <!--BootStrap jQuery and its dependencies -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+    <!--End dependencies -->
+
+</head>
+
+<body>
+
+    <br>
+    <div class="row-centered">
+        <div class="column-centered">
+            <div class="flex1"></div>
+            <div class="loginFormWrapper">
+                <form action="/Voidnet/servlet/login" method="post" id="form-container" class="rounded" action="j_security_check">
+                <!-- To incorporate a rest service I am going to have to remove the bootstrap here an implement form.. then I can do <form action="/Voidnet/rest/PermissionRest" followed by method="post" -->
+                        <h3>VoidNet</h3>
+                        <label for="enter your username"></label>
+                        <input type="text" class="form-control" id="username" name="username" aria-describedby="userName" placeholder="Enter your username">
+                        <label for="enter your username"></label>
+                        <input type="password" class="form-control" id="password" name="password" placeholder="Enter your Password">
+                    <button type="submit" class="btn btn-primary" id="login-button" >Submit</button>
+                </form>
+            </div>
+            <div class="flex2 "></div>
+        </div>
+    </div>
+
+
+</body>
+
+</html>
