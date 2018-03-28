@@ -1,287 +1,326 @@
-/* http://meyerweb.com/eric/tools/css/reset/ 
-   v2.0 | 20110126
-   License: none (public domain)
-*/
-
-html,
-body,
-div,
-span,
-applet,
-object,
-iframe,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-blockquote,
-pre,
-a,
-abbr,
-acronym,
-address,
-big,
-cite,
-code,
-del,
-dfn,
-em,
-img,
-ins,
-kbd,
-q,
-s,
-samp,
-small,
-strike,
-strong,
-sub,
-sup,
-tt,
-var,
-b,
-u,
-i,
-center,
-dl,
-dt,
-dd,
-ol,
-ul,
-li,
-fieldset,
-form,
-label,
-legend,
-table,
-caption,
-tbody,
-tfoot,
-thead,
-tr,
-th,
-td,
-article,
-aside,
-canvas,
-details,
-embed,
-figure,
-figcaption,
-footer,
-header,
-hgroup,
-menu,
-nav,
-output,
-ruby,
-section,
-summary,
-time,
-mark,
-audio,
-video {
-    margin: 0;
-    padding: 0;
-    border: 0;
-    font-size: 100%;
-    font: inherit;
-    vertical-align: baseline;
-}
-
-
-/* HTML5 display-role reset for older browsers */
-
-article,
-aside,
-details,
-figcaption,
-figure,
-footer,
-header,
-hgroup,
-menu,
-nav,
-section {
-    display: block;
-}
-
-body {
-    line-height: 1;
-}
-
-ol,
-ul {
-    list-style: none;
-}
-
-blockquote,
-q {
-    quotes: none;
-}
-
-blockquote:before,
-blockquote:after,
-q:before,
-q:after {
-    content: '';
-    content: none;
-}
-
-table {
-    border-collapse: collapse;
-    border-spacing: 0;
-}
-
-
 /*
-* Myer Reset
+* This section is what creates the body of fibinacci desing for voidbox
+* It maynot have been the best way to go about it, but hey it works
 */
-html,body{
-    margin: 0px;
-    padding: 0px;
-    height: 100vh;
-}
+
+html {}
 
 body {
     background: linear-gradient(141deg, black 0%, #a80077 51%, #f16f5c 75%);
     background-size: cover;
-}
-nav,
-h1,
-h3,
-p {
     font-family: 'Ubuntu', Helvetica, Arial, sans-serif;
 }
 
-h3 {
-    font-size: 18px;
-}
-
-h1 {
-    font-size: 32px;
-}
-
-.homePage-intro {
-    font-family: 'Ubuntu', Helvetica, Arial, sans-serif;
-    font-size: 50px;
-    line-height: 65px;
-    align-content: center;
-    position: relative;
-}
-
-#rondedCorners {
-    border-radius: 5px;
-    background: lightgray;
-    padding: 10px;
-    height:100%;
-    
-}
-
-.homePage-content {
-    margin-top: 2%;
-    height: 80%;
+.myHead {
+    top: 0px;
+    position: sticky;
     width: 100%;
 }
 
-.card-deck{
- width:100%;
- height: 60%;   
-}
-
-.card-space{
-    width: 2%;
-    height:100%;
-}
-.card-space2{
-    width: %
-}
-.card {
-    height: 50%;
-}
-
-.card-block {
-    background: #aebcbf;
-}
-
-.card-text {
-    background: #aebcbf;
-}
-
-img {
-    position: relative;
-    width: 100%;
+.container {
+    display: flex;
     height: 100%;
-    background-position: 50% 50%;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-.intro-div {
-    margin-top: 2%;
-    margin-left: 2%;
-    justify-content: flex-end;
-    border-radius: 15px;
-    background: lightgray;
-    padding: 20px;
-    width: 50%;
-    height 10%;
-}
-
-.intro-space{
-    width: 2%;
-}
-
-.intro-p {
-    color: black;
-    font-size: 24px;
-    font-family: 'Vollkorn', Georgia, Times, serif;
+    width: 100%;
 }
 
 .mainContent {
+    color: aliceblue;
+    height: 100%;
+    width: 66%;
+    flex-direction: row;
+}
+
+.sideNav {
     display: flex;
-    margin-top: 2%;
-    height: 60%;
-    border-radius: 5px;
-    padding: 10px;
-}
-.starDestroyer-space{
-    width:2%;
-}
-
-.aside {
     height: 100%;
-    width: 30%;
-    border-radius: 5px;
-    background: lightgray;
-    padding: 10px;
-    position: relative;
+    width: 33%;
+    flex-direction: column;
+    justify-content: flex-end;
 }
 
-.main-space {
-    height: 100%;
-    width: 3%
-}
 
-.main-text {
-    background: lightgray;
-    position: flex-end;
-    width: 85%;
-    padding: 10px;
-    border-radius: 5px;
-}
+/*This box social media is not going to contain an image but blend into the background*/
 
-.text-background{
-    background: azure;
-    position: flex-end;
+.socialMedia {
+    display: flex;
+    height: 33%;
     width: 100%;
-    height: 95%;
-    padding: 10px;
+    justify-content: flex-end;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin-left: 5%;
+    margin-bottom: 3%;
+}
+
+
+/*Blocks 4-5-6 are all for social media*/
+
+.block4 {
+    justify-content: flex-end;
+    display: flex;
+    height: 50%;
+    width: 50%;
+    flex-direction: column;
+    align-items: center;
+    overflow: auto;
+}
+
+.block5 {
+    display: flex;
+    height: 50%;
+    width: 50%;
+    align-self: flex-end;
+    flex-direction: column;
+    align-items: center;
+    overflow: auto;
+}
+
+.block6 {
+    display: flex;
+    height: 50%;
+    width: 50%;
+    align-self: flex-end;
+    flex-direction: column;
+    align-items: center;
+    overflow: auto;
+}
+
+.space {}
+
+
+/*This section is all the content for the main page*/
+
+.imageContent {
+    display: flex;
+    height: 30%;
+    color: black;
+}
+
+.img-space {
+    height: 100%;
+    width: 1%
+}
+
+.image-tag {
+    height: 100%;
+    width: 50%;
+    overflow: auto;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+}
+
+.img-container {
+    height: 100%;
+    width: 60%;
+}
+
+#roundedCorners {
     border-radius: 5px;
+    background: lightgray;
+    padding: 10px;
 }
-.moreSpace{
-	height: 500px;
+
+#roundedCorners2 {
+    border-radius: 5px;
+    background: lightgray;
+    padding: 5px;
 }
+
+.text-Content {
+    height: 15%;
+    width: 100%;
+    overflow: auto;
+}
+
+.final-image {
+    display: flex;
+    height: 32%;
+    width: 100%;
+    overflow: auto;
+}
+
+.img1 {
+    height: 100%;
+    width: 100%;
+    overflow: auto;
+}
+
+.imgSpace {
+    width: 3%;
+    height: 100%;
+}
+
+.img2 {
+    height: 100%;
+    width: 100%;
+    overflow: auto;
+    
+}
+
+
+/*This is the ending of the mainpage content we will going into side nav next */
+
+.sideIntro {
+    align-items: flex-start;
+    height: 100%;
+    width: 100%;
+}
+
+.logo {
+    margin-left: 20%;
+    height: 12%;
+    width: 70%;
+    justify-content: flex-end;
+}
+
+.buttonGroup {
+    height: 46%;
+    width: 100%;
+    text-align: center;
+    overflow: hidden;
+    
+}
+
+.fButton {
+    padding: 16px 30px;
+    font-weight: 700;
+    background: transparent;
+    outline: none !important;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    color: aliceblue;
+}
+
+.buttonOne {
+    width: 100%%;
+    height: 12%;
+    line-height: 42px;
+    padding: 0;
+    border: none;
+}
+
+.buttonOne span {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.buttonOne:before,
+.buttonOne:after {
+    position: absolute;
+    content: "";
+    right: 0;
+    top: 0;
+    background: #000;
+    transition: all 0.3s ease;
+}
+
+.buttonOne:before {
+    height: 0%;
+    width: 2px;
+}
+
+.buttonOne:after {
+    width: 0%;
+    height: 2px;
+}
+
+.buttonOne:hover:before {
+    height: 100%;
+}
+
+.buttonOne:hover:after {
+    width: 100%;
+}
+
+.buttonOne span:before,
+.buttonOne span:after {
+    position: absolute;
+    content: "";
+    left: 0;
+    bottom: 0;
+    background: #000;
+    transition: all 0.3s ease;
+}
+
+.buttonOne span:before {
+    width: 2px;
+    height: 0%;
+}
+
+.buttonOne span:after {
+    width: 0%;
+    height: 2px;
+}
+
+.buttonOne span:hover:before {
+    height: 100%;
+}
+
+.buttonOne span:hover:after {
+    width: 100%;
+}
+
+.contact {
+    margin-left: 5%;
+    overflow: auto;
+}
+
+
+/*End of side area now on to social media buttons*/
+
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 100%;
+    text-align: center;
+    text-decoration: none;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.linkedin {
+    height: 100%;
+    width: 100%;
+}
+
+.facebook {
+    height: 100%;
+    width: 100%;
+}
+
+.github {
+    height: 100%;
+    width: 100%;
+}
+
+.fa-linkedin {
+    color: white;
+    background: #007bb5;
+    height: 100%;
+    width: 100%;
+}
+
+.fa-facebook {
+    color: white;
+    background: #3B5998;
+    height: 100%;
+    width: 100%;
+}
+
+.fa-github {
+    color: white;
+    background: purple;
+    height: 100%;
+    width: 100%;
+}
+
+
+/*With social media done we can now go onto the footer.*/

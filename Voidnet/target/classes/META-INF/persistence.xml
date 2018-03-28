@@ -15,6 +15,10 @@
                <jta-data-source>java:/VoidnetDatasource</jta-data-source>
 
                <class>entity.Account</class>
+               <class>entity.Address</class>
+               <class>entity.Order</class>
+               <class>entity.OrderDetail</class>
+               <class>entity.Product</class>
 
               
 

@@ -1,0 +1,71 @@
+html {
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    background: linear-gradient(141deg, black 0%, #a80077 51%, #f16f5c 75%);
+    background-size: cover;
+    font-family: 'Ubuntu', Helvetica, Arial, sans-serif;
+    height: 100%;
+    width:100%;
+}
+
+button{
+    background-color: green
+}
+
+.myHead {
+    top: 0px;
+    position: sticky;
+    width: 100%;
+}
+
+h3 {
+    color: aliceblue;
+    text-align: center;
+}
+
+.myHR {
+    border: 0;
+    height: 1px;
+    background: #333;
+    background-image: none;
+    background-image: linear-gradient(to right, #ccc, #333, #ccc);
+    width: 40%;
+}
+
+.space {
+    width: 100%;
+    height: 2%;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.card {
+    display: flex;
+    height: 25%;
+    width: 23%;
+}
+
+#roundedCorners2 {
+    border-radius: 5px;
+    background: lightgray;
+    padding: 2px;
+}
+
+.space2 {
+    width: 100%;
+    height: 3%;
+}
+
+
+img {
+    height: 85%;
+    width: 100%%;
+}
